@@ -7,7 +7,7 @@ public class Principal {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		Pessoa p = new Pessoa();
-		Endereco e = new Endereco();
+		
 		String ddd;
 		String telefone;
 		/*
@@ -15,13 +15,13 @@ public class Principal {
 		p.setCpf("11144477735");
 		p.setEmail("dasd@dasda.com");		
 		
-		e.setCep("83000000");
-		e.setLogradouro("rua das araucárias");
-		e.setNumero("000");
-		e.setComplemento("APTO");
-		e.setBairro("lado Leste");
-		e.setCidade("Matagal");
-		e.setEstado("Floresta do sul");
+		p.getEndereco().setCep("83000000");
+		p.getEndereco().setLogradouro("rua das araucárias");
+		p.getEndereco().setNumero("000");
+		p.getEndereco().setComplemento("APTO");
+		p.getEndereco().setBairro("lado Leste");
+		p.getEndereco().setCidade("Matagal");
+		p.getEndereco().setEstado("Floresta do sul");
 		
 		p.setEndereco(e);
 		p.setTelefone(new Telefone("041","999999999"));
@@ -37,20 +37,20 @@ public class Principal {
 		System.out.print("Por gentileza digite seu e-mail: ");
 		p.setEmail(ler.next());
 		System.out.print("Por gentileza digite seu CEP (sem separador): ");
-		e.setCep(ler.next());
+		p.getEndereco().setCep(ler.next());
 		System.out.print("Por gentileza digite seu logradouro: ");
-		e.setLogradouro(ler.nextLine());
+		p.getEndereco().setLogradouro(ler.nextLine());
 		System.out.print("Por gentileza digite o numero de seu logradouro: ");
-		e.setNumero(ler.next());
+		p.getEndereco().setNumero(ler.next());
 		System.out.print("Por gentileza digite o complemento: ");
-		e.setComplemento(ler.nextLine());
+		p.getEndereco().setComplemento(ler.nextLine());
 		System.out.print("Por gentileza digite o bairro: ");
-		e.setBairro(ler.nextLine());
+		p.getEndereco().setBairro(ler.nextLine());
 		System.out.print("Por gentileza digite a cidade: ");
-		e.setCidade(ler.nextLine());
+		p.getEndereco().setCidade(ler.nextLine());
 		System.out.print("Por gentileza digite o estado: ");
-		e.setEstado(ler.nextLine());
-		p.setEndereco(e);
+		p.getEndereco().setEstado(ler.nextLine());
+		
 		System.out.print("Por gentileza digite o ddd de seu telefone: ");
 		ddd= ler.next();		
 		System.out.print("Por gentileza digite o número de seu telefone: ");

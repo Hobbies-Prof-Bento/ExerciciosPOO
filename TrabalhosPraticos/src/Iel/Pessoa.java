@@ -7,7 +7,7 @@ public class Pessoa {
 	private String nome;
 	private String cpf;
 	private String email;	
-	private Endereco endereco;
+	private Endereco endereco = new Endereco();
 	private Telefone telefone;
 	
 	public boolean validaCpf(String cpf){
