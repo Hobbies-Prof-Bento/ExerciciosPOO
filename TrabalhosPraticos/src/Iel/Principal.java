@@ -4,26 +4,28 @@ import java.util.Scanner;
 
 public class Principal {
 
+	
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		Pessoa p = new Pessoa();
 		
 		String ddd;
 		String telefone;
+		
 		/*
 		p.setNome("Joãozinho da Silva");
 		p.setCpf("11144477735");
 		p.setEmail("dasd@dasda.com");		
 		
-		p.getEndereco().setCep("83000000");
-		p.getEndereco().setLogradouro("rua das araucárias");
-		p.getEndereco().setNumero("000");
-		p.getEndereco().setComplemento("APTO");
-		p.getEndereco().setBairro("lado Leste");
-		p.getEndereco().setCidade("Matagal");
-		p.getEndereco().setEstado("Floresta do sul");
+		p.endereco.setCep("83000000");
+		p.endereco.setLogradouro("rua das araucárias");
+		p.endereco.setNumero("000");
+		p.endereco.setComplemento("APTO");
+		p.endereco.setBairro("lado Leste");
+		p.endereco.setCidade("Matagal");
+		p.endereco.setEstado("Floresta do sul");
 		
-		p.setEndereco(e);
+		
 		p.setTelefone(new Telefone("041","999999999"));
 		
 		System.out.println(p.toString());
@@ -33,28 +35,28 @@ public class Principal {
 		System.out.print("Por gentileza digite seu nome: ");
 		p.setNome(ler.nextLine());
 		System.out.print("Por gentileza digite seu CPF: ");
-		p.setCpf(ler.next());
+		p.setCpf(ler.nextLine());
 		System.out.print("Por gentileza digite seu e-mail: ");
-		p.setEmail(ler.next());
+		p.setEmail(ler.nextLine());
 		System.out.print("Por gentileza digite seu CEP (sem separador): ");
-		p.getEndereco().setCep(ler.next());
+		p.endereco.setCep(ler.nextLine());
 		System.out.print("Por gentileza digite seu logradouro: ");
-		p.getEndereco().setLogradouro(ler.nextLine());
+		p.endereco.setLogradouro(ler.nextLine());
 		System.out.print("Por gentileza digite o numero de seu logradouro: ");
-		p.getEndereco().setNumero(ler.next());
+		p.endereco.setNumero(ler.nextLine());
 		System.out.print("Por gentileza digite o complemento: ");
-		p.getEndereco().setComplemento(ler.nextLine());
+		p.endereco.setComplemento(ler.nextLine());		
 		System.out.print("Por gentileza digite o bairro: ");
-		p.getEndereco().setBairro(ler.nextLine());
+		p.endereco.setBairro(ler.nextLine());
 		System.out.print("Por gentileza digite a cidade: ");
-		p.getEndereco().setCidade(ler.nextLine());
+		p.endereco.setCidade(ler.nextLine());
 		System.out.print("Por gentileza digite o estado: ");
-		p.getEndereco().setEstado(ler.nextLine());
+		p.endereco.setEstado(ler.nextLine());
 		
 		System.out.print("Por gentileza digite o ddd de seu telefone: ");
-		ddd= ler.next();		
+		ddd= ler.nextLine();		
 		System.out.print("Por gentileza digite o número de seu telefone: ");
-		telefone = ler.next();
+		telefone = ler.nextLine();
 		p.setTelefone(new Telefone(ddd,telefone));
 		
 		System.out.println("_________________________");
