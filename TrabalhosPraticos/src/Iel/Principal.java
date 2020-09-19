@@ -17,13 +17,13 @@ public class Principal {
 		p.setCpf("11144477735");
 		p.setEmail("dasd@dasda.com");		
 		
-		p.endereco.setCep("83000000");
-		p.endereco.setLogradouro("rua das araucárias");
-		p.endereco.setNumero("000");
-		p.endereco.setComplemento("APTO");
-		p.endereco.setBairro("lado Leste");
-		p.endereco.setCidade("Matagal");
-		p.endereco.setEstado("Floresta do sul");
+		p.getEndereco().setCep("83000000");
+		p.getEndereco().setLogradouro("rua das araucárias");
+		p.getEndereco().setNumero("000");
+		p.getEndereco().setComplemento("APTO");
+		p.getEndereco().setBairro("lado Leste");
+		p.getEndereco().setCidade("Matagal");
+		p.getEndereco().setEstado("Floresta do sul");
 		
 		
 		p.setTelefone(new Telefone("041","999999999"));
@@ -39,19 +39,19 @@ public class Principal {
 		System.out.print("Por gentileza digite seu e-mail: ");
 		p.setEmail(ler.nextLine());
 		System.out.print("Por gentileza digite seu CEP (sem separador): ");
-		p.endereco.setCep(ler.nextLine());
+		p.getEndereco().setCep(ler.nextLine());
 		System.out.print("Por gentileza digite seu logradouro: ");
-		p.endereco.setLogradouro(ler.nextLine());
+		p.getEndereco().setLogradouro(ler.nextLine());
 		System.out.print("Por gentileza digite o numero de seu logradouro: ");
-		p.endereco.setNumero(ler.nextLine());
+		p.getEndereco().setNumero(ler.nextLine());
 		System.out.print("Por gentileza digite o complemento: ");
-		p.endereco.setComplemento(ler.nextLine());		
+		p.getEndereco().setComplemento(ler.nextLine());		
 		System.out.print("Por gentileza digite o bairro: ");
-		p.endereco.setBairro(ler.nextLine());
+		p.getEndereco().setBairro(ler.nextLine());
 		System.out.print("Por gentileza digite a cidade: ");
-		p.endereco.setCidade(ler.nextLine());
+		p.getEndereco().setCidade(ler.nextLine());
 		System.out.print("Por gentileza digite o estado: ");
-		p.endereco.setEstado(ler.nextLine());
+		p.getEndereco().setEstado(ler.nextLine());
 		
 		System.out.print("Por gentileza digite o ddd de seu telefone: ");
 		ddd= ler.nextLine();		
