@@ -1,0 +1,18 @@
+10) Analise o que foi implementado até agora. *
+• O que pode ser abstraído?
+
+	Acredito que poderia-se abstrair as quatro classes uma únicaclasse com o nome forma geométrica, tendo em vista
+que todo quadrado é um retângulo não seria necessário criar uma classe quadrado.
+
+• Onde há repetições de código?
+
+	repete-se os atributos área, perímetro e os métodos calcula área e calcula perímetro.
+
+• O que pode ser padronizado?
+	
+	É possível criar um padrão para formas geométricas regulares e não regulares.
+
+• O que há em comum com os elementos Retangulo, Circulo e
+Quadrado?
+
+	Ambos possuem área e perímetro.
